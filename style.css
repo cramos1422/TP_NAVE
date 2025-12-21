@@ -6,6 +6,7 @@
     --color-icosub-650:#31006f;
     --color-fondohist-600:#360c72;
     --color-botonentrar-500:#632cd5;
+    --color-fondomenu-350:#E4D7FF;
     --color-column-300:#bebebe;
     --color-fondoiconos-250:#f0eafc;
     --color-cuart-200:#fcfbff;
@@ -39,6 +40,8 @@ p{
 }
 ul{list-style-type: none;}
 header{
+    position: sticky;
+    top: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -65,13 +68,61 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 6px 24px;
 }
 .a-header{
-    padding: 6px 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 24px;
     margin: 0px 4px;
 }
 .divisor-header{
     width: 1px;
     height: 24px;
     background-color: var(--color-column-300);
+}
+h1{
+    font-size: 30px;
+    padding: 64px 0px 32px 0px;
+}
+.a-header:hover {
+    background: var(--color-fondomenu-350);
+    color: var(--color-icosub-650);
+    border-radius: 50px;
+}
+.buttons-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+.button-left{
+    display: flex;
+    padding: 12px 24px;
+    color: var(--color-botonentrar-500);
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 1px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+.button-right{
+    padding: 12px 24px;
+    color: var(--color-terci-100);
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: var(--color-botonentrar-500);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.button-left:hover{
+    color: var(--color-icosub-650);
+    background-color: var(--color-fondomenu-350);
+}
+.button-right:hover{
+    color: var(--color-icosub-650);
+    background-color: var(--color-fondomenu-350);
 }
