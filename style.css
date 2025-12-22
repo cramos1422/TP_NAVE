@@ -19,18 +19,19 @@
     font-family:"Inter", sans-serif;
     background-color: var(--color-cuart-200);
 }
+h1{
+    font-size: 40px;
+    padding: 64px 0px 32px 0px;
+    text-align: center;
+}
 body{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 a{
     color: inherit;
     text-decoration: none;
-}
-h1{
-    font-size: 40px;
 }
 h2{
     font-size: 24px;
@@ -82,10 +83,6 @@ header{
     height: 24px;
     background-color: var(--color-column-300);
 }
-h1{
-    font-size: 30px;
-    padding: 64px 0px 32px 0px;
-}
 .a-header:hover {
     background: var(--color-fondomenu-350);
     color: var(--color-icosub-650);
@@ -125,4 +122,53 @@ h1{
 .button-right:hover{
     color: var(--color-icosub-650);
     background-color: var(--color-fondomenu-350);
+}
+.tarjetas{
+    display: flex;
+    flex-direction: row;  
+    width: 1022px;
+    max-width: 1022px;
+    justify-content: space-between;
+}
+.icono-tarjetas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 318px;
+    height: 248px;
+    background-color: white;
+    border-radius: 16px;
+    margin: 12px 0px 0px;
+    padding: 24px;
+    transition: transform 0.3s ease;
+}
+.text-tarjetas{
+    background-color: transparent;
+}
+.texto{
+    color: rgb(73, 73, 73);
+}
+.icono-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 62px;
+    height: 62px;
+    border-radius: 16px;
+    background-color: var(--color-fondoiconos-250);
+}
+svg{
+    color: var(--color-botonentrar-500);
+    width: 25px;
+    height: 25px;
+    background-color:var(--color-fondoiconos-250);
+    
+}
+.icono-tarjetas:hover svg{
+    transition: 0.3s ease; color;
+    color: var(--color-prim-900);
+}
+.icono-tarjeta:hover{
+    transform: translateY(-5px);
 }
