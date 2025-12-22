@@ -9,9 +9,9 @@
 </head>
 
 <body>
-    <header>
+    <header class="header-full">
         <nav class="nav-header">
-            <a href="#">
+            <a class="a-img-header" href="#">
                 <img src="./imagenes/Logo-Nave.jpg" alt="Logo-Nave">
             </a>
             <ul class="ul-header">
@@ -41,6 +41,19 @@
                     Entrar a Nave
                 </a>
         </nav>
+    </header>
+    <header class="header-pocket">
+        <nav class="nav-pocket">
+            <div class="menu-burguer">
+            <svg width="16" height="16" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+                </div>
+                <img class="img-header-pocket" src="./imagenes/Logo-Nave-Mobile.jpg" alt="">
+                <div class="icono-vacio">
+                </div>
+        </nav>
+        
     </header>
     <section class="bienvenida">
         <h1>Te damos la bienvenida al vuelo de tu negocio</h1>
@@ -96,15 +109,15 @@
             </div>
         </div>
         <div class="cont-historias">
-            <h2>
-                Historias que vuelan
-            </h2>
-            <p>
-                Conocé a los comercios que eligen Nave todos los días 💜
-            </p>
-        </div>
-        <div>
-            <a href="#">Conocer más</a>
+            <div class="conocer-historias">
+                <h2 class="text-historias">
+                    Historias que vuelan
+                </h2>
+                <p class="text-historias">
+                    Conocé a los comercios que eligen Nave todos los días 💜
+                </p>
+            </div>
+            <a class="ancla-historias text-historias" href="#">Conocer más</a>
         </div>
     </section>
     <section class="cobro">
@@ -112,69 +125,98 @@
             <h1>
                 Encontrá el medio de cobro ideal
             </h1>
-            <p>
+            <p class="texto-cobro">
                 Elegí las opciones que mejor se ajustan a tu negocio.
             </p>
         </div>
         <div class="padre-qr">
             <div class="content-qr">
-                <h2>
+                <h2 class="h2-interior texto-interior">
                     QR
                 </h2>
-                <p>
+                <p class="p-interior texto-interior">
                     Ideal para cobrar en tu local o desde donde prefieras sin manejar efectivo.
                 </p>
-                <a href="#">
-                    Conocer más
-                </a>
+                <div class="cont-btn">
+                    <a class="btn-conocer" href="#">
+                        Conocer más
+                    </a>
+                </div>
             </div>
-            <img src="./imagenes/qr.png" width="510px" alt="img_qr">
+            <img class="img-cobros" src="./imagenes/qr.png" width="510px" alt="img_qr">
         </div>
         <div class="padre-posnet">
+            <img class="img-cobros" src="./imagenes/posnet.png" width="510px" alt="img_posnet">
             <div class="content-posnet">
-                <img src="./imagenes/posnet.png" width="510px" alt="img_posnet">
-                <h2>
+                <h2 class="h2-interior texto-interior">
                     Terminal Nave Point
                 </h2>
-                <p>
+                <p class="p-interior texto-interior">
                     Aceptá pagos con tarjetas de débito y crédito en tu local de forma rápida y segura.
                 </p>
-                <a href="#">
-                    Conocer más
-                </a>
+                <div class="cont-btn">
+                    <a class="btn-conocer" href="#">
+                        Conocer más
+                    </a>
+                </div>
             </div>
         </div>
     </section>
     <footer>
-        <img src="./imagenes/Logo-Nave-Mobile.jpg" alt="Logo_footer">
+        <!-- <div  class="icono-footer">
+            
+        </div> -->
         <div class="footer-container">
-            <ul class="ul-footer">
-                <span>Nave</span>
-                <li><a href="#" class="link">Cobrá con Nave</a></li>
-                <li><a href="#" class="link">Entrar a Nave</a></li>
-                <li><a href="#" class="link">El blog de Nave</a></li>
-                <li><a href="#" class="link">Empezar a cobrar</a></li>
-                <li><a href="#" class="link">Abrir cuenta en galicia</a></li>
-                <li><a href="#" class="link">Cobranzas integradas</a></li>
-                <li><a href="#" class="link">Nave Developers</a></li>
-                <li><a href="#" class="link">Integraciones</a></li>
-            </ul>
-            <ul class="ul-footer">
-                <span>Medios de cobro</span>
-                <li><a href="#" class="link">Cobrá con QR</a></li>
-                <li><a href="#" class="link">Cobrá por tu tienda online</a></li>
-                <li><a href="#" class="link">Cobrá con Link de pago</a></li>
-                <li><a href="#" class="link">Cobrá con Nave Point</a></li>
-            </ul>
-            <ul class="ul-footer">
-                <span>Beneficios</span>
-                <li><a href="#" class="link">Promociones</a></li>
-                <li><a href="#" class="link">Mapa de Nave</a></li>
-            </ul>
-            <ul class="ul-footer">
-                <span>Te puede interesar</span>
-                <li><a href="#" class="link">Galicia</a></li>
-            </ul>
+            <div class="ul-container">
+                <div class="top-icono">
+                    <img src="./imagenes/Logo-Nave-Mobile.jpg" alt="Logo_footer">
+                </div>
+                <ul class="ul-footer">
+
+                    <span class="top-ul-footer">Nave</span>
+                    <li class="li-footer"><a href="#" class="link">Cobrá con Nave</a></li>
+                    <li class="li-footer"><a href="#" class="link">Entrar a Nave</a></li>
+                    <li class="li-footer"><a href="#" class="link">El blog de Nave</a></li>
+                    <li class="li-footer"><a href="#" class="link">Empezar a cobrar</a></li>
+                    <li class="li-footer"><a href="#" class="link">Abrir cuenta en galicia</a></li>
+                    <li class="li-footer"><a href="#" class="link">Cobranzas integradas</a></li>
+                    <li class="li-footer"><a href="#" class="link">Nave Developers</a></li>
+                    <li class="li-footer"><a href="#" class="link">Integraciones</a></li>
+                </ul>
+            </div>
+            <div class="ul-container">
+                <div class="top-icono">
+
+                </div>
+                <ul class="ul-footer">
+
+                    <span class="top-ul-footer">Medios de cobro</span>
+                    <li class="li-footer"><a href="#" class="link">Cobrá con QR</a></li>
+                    <li class="li-footer"><a href="#" class="link">Cobrá por tu tienda online</a></li>
+                    <li class="li-footer"><a href="#" class="link">Cobrá con Link de pago</a></li>
+                    <li class="li-footer"><a href="#" class="link">Cobrá con Nave Point</a></li>
+                </ul>
+            </div>
+            <div class="ul-container">
+                <div class="top-icono">
+
+                </div>
+                <ul class="ul-footer">
+
+                    <span class="top-ul-footer">Beneficios</span>
+                    <li class="li-footer"><a href="#" class="link">Promociones</a></li>
+                    <li class="li-footer"><a href="#" class="link">Mapa de Nave</a></li>
+                </ul>
+            </div>
+            <div class="ul-container">
+                <div class="top-icono">
+
+                </div>
+                <ul class="ul-footer">
+                    <span class="top-ul-footer">Te puede interesar</span>
+                    <li class="li-footer"><a href="#" class="link">Galicia</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>

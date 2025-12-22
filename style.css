@@ -17,6 +17,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family:"Inter", sans-serif;
+    /* Aca tenia que haber normalizado el background color con white o no ponerle nada directamente...creo */
     background-color: var(--color-cuart-200);
 }
 h1{
@@ -24,11 +25,11 @@ h1{
     padding: 64px 0px 32px 0px;
     text-align: center;
 }
-body{
+/* body{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 a{
     color: inherit;
     text-decoration: none;
@@ -39,8 +40,12 @@ h2{
 p{
     font-size: 18px;
 }
-ul{list-style-type: none;}
-header{
+ul{
+    list-style-type: none;
+}
+
+.header-full{
+    background-color: #ffffff;
     position: sticky;
     top: 0;
     display: flex;
@@ -49,27 +54,50 @@ header{
     width: 100%;
     align-items: center;
     box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.2);
-
+    z-index: 99;
 }
 .nav-header{
+    background-color: #ffffff;
     padding: 16px;
     font-size: 14px;
     font-weight: bold;
     width: 1022px;
-    max-width: 1022px;
     height: 82px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    display: none;
+    }
 
+.bi-list{
+    background-color: #ffffff;
 }
-.ul-header{
+.icono-vacio{
+    width: 4px;
+    height: 4px;
+    background-color: white;
+}
+.menu-burguer{
+    background-color: white;
+    width: 25px;
+    height: 25px;
+}
+
+.a-img-header{
+    background-color: #ffffff;
+}
+
+    .ul-header{
+    background-color: #ffffff;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 6px 24px;
+}
+.list-header{
+    background-color: white;
 }
 .a-header{
     display: flex;
@@ -89,6 +117,7 @@ header{
     border-radius: 50px;
 }
 .buttons-header{
+    background-color: #ffffff;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -140,7 +169,7 @@ header{
     border-radius: 16px;
     margin: 12px 0px 0px;
     padding: 24px;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;    
 }
 .text-tarjetas{
     background-color: transparent;
@@ -165,10 +194,198 @@ svg{
     background-color:var(--color-fondoiconos-250);
     
 }
+.icono-tarjetas:hover{
+    transform: translateY(-6px);
+}
 .icono-tarjetas:hover svg{
     transition: 0.3s ease; color;
     color: var(--color-prim-900);
 }
-.icono-tarjeta:hover{
-    transform: translateY(-5px);
+.text-historias{
+    background-color: transparent;
+}
+.cont-historias{    
+    width: 1022px;
+    max-width: 1022px;
+    height: 134px;
+    color: var(--color-terci-100);
+    background-color: var(--color-fondohist-600);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 64px;
+    border-radius: 32px;
+    margin-top: 32px;
+}
+.conocer-historias{
+    background-color: transparent;
+    width: 670px;
+    height: 70px;
+}
+.ancla-historias{
+    font-weight: bold;
+    color: var(--color-botonentrar-500);
+    padding: 10px 32px;
+    border-radius: 50px;
+    background-color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.ancla-historias:hover{
+    color: var(--color-fondomenu-350);
+    background-color: black;
+}
+.texto-cobro{
+    color: rgb(73, 73, 73);
+    font-size: 16px;
+    text-align: center;
+}
+.padre-qr{
+    width: 1022px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 32px;
+    background-color: white;
+    overflow: hidden;
+    margin-top: 36px;
+}
+.content-qr{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    gap: 24px;
+    padding: 24px;
+    box-sizing: border-box;
+}
+.cont-btn{
+    background-color: #ffffff;
+    margin-top: 110px;
+}
+.img-cobros{
+    height: 370px;
+    width: auto;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.img-cobros:hover{
+    transform: scale(1.05);
+}
+
+.texto-interior{
+    background-color: white;
+}
+.h2-interior{
+    font-size: 30px;
+    padding: 0px 0px 24px;
+
+}
+.btn-conocer{
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 32px;
+    border-radius: 50px;
+    background-color: var(--color-botonentrar-500);
+    color: var(--color-terci-100);
+    transition: background-color 0.3s ease;
+}
+.btn-conocer:hover{
+    background-color: var(--color-icosub-650);
+}
+.padre-posnet{
+    width: 1022px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 32px;
+    background-color: white;
+    overflow: hidden;
+    margin-top: 36px;
+}
+.content-posnet{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    gap: 24px;
+    padding: 24px;
+    box-sizing: border-box;
+}
+footer{
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    width: 1022px;
+    padding-top: 24px;
+    box-shadow: 0 -0.5px 1px rgba(0,0,0,0.2);
+}
+.footer-container{
+    width: 1022px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 64px 0 64px;
+}
+.icono-footer{
+    margin-top: 24px;
+    margin-left: 64px;
+    margin-bottom: 12px;
+    width: 958px;
+    height: 44px;
+    background-color: #ffffff;
+}
+.top-icono{
+    width: 46px;
+    height: 46px;
+    margin-bottom: 12px;
+    background-color: white;
+}
+.top-ul-footer{
+    font-weight: bold;
+    margin-bottom: 32px;
+    background-color: #ffffff;
+}
+.link{
+    background-color: #ffffff;
+}
+.ul-container{
+    background-color: #ffffff;
+    margin-bottom: 24px;
+}
+.ul-footer{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.li-footer{
+    background-color: #ffffff;
+}
+.header-pocket{
+    width: 100%;
+    height: 56px;  
+        position: sticky;
+    top: 0;  
+    z-index: 99;
+}
+.nav-pocket{
+
+    background-color: #ffffff;
+    padding: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.2);
 }
